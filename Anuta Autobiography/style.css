@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+div::-webkit-scrollbar{
+    display: none;
+}
+
+nav{
+    background-color: black;
+    padding: 2rem;
+    letter-spacing: 4px;
+    color: white;
+    margin-top: -1px;
+    margin-bottom: -1px;
+}
+
+.head{
+    background-image: url(/img/moon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 100px));
+    grid-gap: 5px;
+    padding-bottom: 10rem;
+    justify-content: space-evenly;
+    color: white;
+    margin-top: -1px;
+    overflow: hidden;
+    text-shadow: 2px 2px black;
+}
+
+.heading{
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 100px));
+    grid-gap: 5px;
+    padding-bottom: 10rem;
+    justify-content: space-evenly;
+    color: white;
+    margin-top: -1px;
+    overflow: hidden;
+}
+.heading-item{
+    padding: 1rem;
+    text-align: justify;
+    margin: auto;
+}
+.heading-item img{
+    grid-area: image;
+    text-align: center;
+    width: 25rem;
+}
+
+@media screen and (max-width: 600px) {
+    .heading{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
+
+.box{
+    display: grid;
+    grid-auto-flow: column;
+    overflow-x: auto;
+    background-color: black;
+    color: black;
+    margin-top: -1px;
+}
+.box-item{
+    display: grid;
+    justify-content: center;
+    margin: 5px;
+    padding: 1rem;
+    width: 15rem;
+    height: 5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    align-items: center;
+    background-color: gray;
+}
+
+@media screen and (max-width: 600px) {
+    .box-items{
+        display: grid;
+        grid-template-rows: 220px;
+        grid-template-columns: auto;
+        grid-template-areas: "image" "text";
+        justify-content: space-evenly;
+    }
+    .box-items img{
+        grid-area: image;
+        text-align: center;
+        width: 25rem;
+    }
+    .box-items p{
+        grid-area: text;
+        padding: 1rem 2rem;
+    }
+}
+
+.table{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+th, td{
+    border: 1px solid white;
+    padding: 2rem;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
